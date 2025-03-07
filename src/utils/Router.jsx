@@ -11,8 +11,7 @@ function Router({pizza,addBase,addToppings,modal,setModal}) {
   return (
     <div>
         <Routes>
-          <Route path="/" element={<Navigate to="/Pizza-framer-site" replace />} />
-          <Route path="/Pizza-framer-site" element={<Pizza />} />
+          <Route path="/" element={<Pizza/>} />
           <Route path="/base" element={<Base addBase={addBase} />} />
           <Route path="/toppings" element={<Toppings addToppings={addToppings}/>} />
           <Route path="/order" element={<Order pizza={pizza} setModal={setModal}/>}/>
